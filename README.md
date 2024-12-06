@@ -1,5 +1,6 @@
 # resume-classifier
-Resume Classifier - Automatic Resume Classification with Enhanced Text Processing
+**Resume Classifier - Automatic Resume Classification with Enhanced Text Processing**
+
 This Python script automates resume classification by extracting text from PDFs and organizing it into categories like education, experience, skills, and projects. 
 
 Key features include:
