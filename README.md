@@ -10,8 +10,8 @@ Key features include:
 - Named Entity Recognition (NER) for dates, organizations, and locations.
 - Regex-based pattern matching for structured data extraction.
 - Fuzzy matching to map content back to its original PDF context.
+  
 The output is a clean, categorized CSV, ideal for analysis or recruitment workflows.
-
 
 ## Installation:
 
@@ -24,6 +24,8 @@ Download all modules required for this program using the following command:
 Download a pre-trained spaCy model, such as en_core_web_sm, from the official website. You can download it using the following command:
 
 ``python -m spacy download en_core_web_sm``
+
+**Note: This program was ran and tested on Python 3.9**
 
 ### Usage:
 
