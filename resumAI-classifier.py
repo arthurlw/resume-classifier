@@ -1,6 +1,11 @@
+# python3.9 -m venv my_env
+# MAC: source my_env/bin/activate
+# pip3.9 install spacy pandas rapidfuzz PyMuPDF scikit-learn python-dateutil
+
+
 # Folder of pdfs to categorized csv
 
-import spacy
+# import spacy
 import pandas as pd
 import re
 import fitz
@@ -8,8 +13,8 @@ import os
 from rapidfuzz import fuzz, process
 from datetime import datetime
 import dateutil.parser
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
+# from sklearn.feature_extraction.text import TfidfVectorizer
+# from sklearn.naive_bayes import MultinomialNB
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -333,6 +338,6 @@ def process_resumes_from_pdfs(folder_path, output_csv_path):
 
 # Main script
 if __name__ == "__main__":
-    folder_path = "path" # Specify path to folder of pdfs
-    output_csv_path = "path" # Specify path to output categorized csv
+    folder_path = "/Users/user/Documents/Coding/ResumAI Classifier/resume-classifier/EXAMPLE"
+    output_csv_path = "/Users/user/Documents/Coding/ResumAI Classifier/resume-classifier/EXAMPLE/classified_resumes.csv"
     process_resumes_from_pdfs(folder_path, output_csv_path)
